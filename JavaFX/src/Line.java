@@ -1,17 +1,41 @@
-import javafx.scene.shape.Circle;
+import java.util.ArrayList;
 
+//for redo memory
 public class Line {
-int lineNR; //järjekorra nr
-int mem = 0; // mälu arrayl
-Circle[] livepoints = new Circle[mem];//joonistuspunktid kuni vasak hiire nupp on all
+	int NR = 0; // järjekorra nr
 
-public Line() {
+	ArrayList<Double> lineX = new ArrayList<Double>();// X and
+	ArrayList<Double> lineY = new ArrayList<Double>(); // Y towhat class
 
-}
+	public Line() {
 
-public Line(Circle[] points, int memory, int lineNR) {
-		livepoints = points;
-		mem = memory;
+	}
+
+	public void AddX(Double point, int nr) {
+		lineX.add(point);
+		NR += nr;
+	}
+
+	public void AddY(Double point) {
+		lineY.add(point);
+	}
+
+	Double getLineX(int n) {
+		return lineX.get(n);
+	}
+
+	Double getLineY(int n) {
+		return lineY.get(n);
+	}
+
+	void clear() {
+		lineX.clear();
+		lineY.clear();
+		NR = 0;
+	}
+
+	int getNR() {
+		return NR;
 	}
 
 }

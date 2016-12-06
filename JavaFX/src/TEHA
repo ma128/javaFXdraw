@@ -1,5 +1,35 @@
 Draw
 pane käima
-joonistus toimib aga undo jne ei veel
-tahtsin lisada joone klassi et iga joon oleks eraldi klassis ja
-arrays draw klassi all et saaks undoda jne
+joonistus toimib, undo redo ka
+towhat korjab andmed Draw klassist ja paneb need streami
+ja Compare peaks kirjutama txt faili, kui seda seal ei ole
+ning samas ka võrdlema teksti faili streamidega ning kui leiab sama siis annab vastuse,
+et mis see on koos tõenäosusega
+
+ja tahtsin nurgad täpsemaks teha, mingi viga on
+compare class on pooleli
+
+ pane käima
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Kasuta tihedalt try catchi, siis saab paremini jälile veale!!
